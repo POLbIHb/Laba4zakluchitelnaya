@@ -1,0 +1,17 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="RealmApp3.FriendPage" Title="Информация о друге">
+    <StackLayout>
+        <Label Text="Имя" />
+        <Entry Text="{Binding Name}" />
+        <Label Text="Возраст" />
+        <Entry Text="{Binding Age}" />
+        <Label Text="Опыт" />
+        <Entry Text="{Binding Exp}" />
+        <StackLayout Orientation="Horizontal">
+            <Button Text="Сохранить" Clicked="SaveFriend" />
+            <Button Text="Удалить" Clicked="DeleteFriend" />
+        </StackLayout>
+    </StackLayout>
+</ContentPage>
